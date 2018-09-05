@@ -1,0 +1,163 @@
+@import '_bootswatch';
+@import '_variables';
+@import 'bootstrap';
+@import 'bootstrap.min.css';
+$blue: red;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+html,body {
+  font: 100% $font-stack;
+  background-color: white;
+}
+@mixin maxwidth{
+	max-width: 100%;
+}
+.main-content{
+	@include maxwidth;
+	/* max-width:100%; */
+}
+.jumbotron{
+	background-image: url('../img/ICC-releases.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 0;
+	height: 60vh;
+}
+.btn1{
+	margin-left: 40%;
+}
+.navigation_logo{
+	padding-right:20px;
+}
+#cd{
+	padding:20px;	
+}
+.col-sm-3{
+	padding:0px;
+	@include maxwidth;
+	/* max-width:100%; */	
+}
+.col-sm-9{
+	padding:0px;
+}
+.row{
+	width:100%;
+	padding:0px;
+}
+.live-content{
+	padding:20px;
+	padding-top:0px;
+	padding-bottom:0px;	
+}
+.card-title a{
+color:blue;
+}
+.card-body{
+  background-color:#b9c5e5;
+}
+.card-header{
+	background-color:#444;
+
+   h5{
+	color:red;
+     }
+}
+.list-group-item a{
+  color:blue;	
+}
+#ct1{
+color:#6d5206;
+}
+#ct2{
+color:#4c3d05;	
+}
+#ct3{
+color:#487059;
+}
+.carousel-item{
+	width:100vw;
+	height:100vh;
+	margin-top: 8%;
+}	
+.live-content{
+	.nav-item{
+		margin-right: 0px;
+	}
+}
+
+/*        Footer            */
+section {
+    padding: 60px 0;
+}
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e ;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none ;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+#footer{
+	padding-bottom:0px;
+}	
