@@ -77,7 +77,7 @@ color:#487059;
 .carousel-item{
 	width:100vw;
 	height:100vh;
-	margin-top: 8%;
+	margin-top: 7%;
 }	
 .live-content{
 	.nav-item{
@@ -109,7 +109,7 @@ section .section-title {
     color: #ffffff;
     text-decoration: none ;
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+    /* -webkit-text-decoration-skip: objects */;
 }
 #footer ul.social li{
 	padding: 3px 0;
@@ -117,9 +117,9 @@ section .section-title {
 #footer ul.social li a i {
     margin-right: 5px;
 	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+	-webkit-transition: .5s /* all ease */;
+	-moz-transition: .5s /* all ease */;
+	transition: .5s /* all ease */;
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
