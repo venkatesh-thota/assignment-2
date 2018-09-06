@@ -4,7 +4,7 @@
 @import 'bootstrap.min.css';
 $blue: red;
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #444;
 html,body {
   font: 100% $font-stack;
   background-color: white;
@@ -22,6 +22,11 @@ html,body {
 	background-size: 100% 100%;
 	margin-bottom: 0;
 	height: 60vh;
+}
+.news-content h2{
+	text-align:center;
+	color:red;
+	padding:10px;
 }
 .btn1{
 	margin-left: 40%;
@@ -56,7 +61,7 @@ color:blue;
   background-color:#b9c5e5;
 }
 .card-header{
-	background-color:#444;
+	background-color:$primary-color;
 
    h5{
 	color:red;
