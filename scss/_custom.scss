@@ -5,6 +5,8 @@
 $blue: red;
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #444;
+$footer-white:#ffffff;
+$footer-color:#007b5e;
 html,body {
   font: 100% $font-stack;
   background-color: white;
@@ -14,7 +16,6 @@ html,body {
 }
 .main-content{
 	@include maxwidth;
-	/* max-width:100%; */
 }
 .jumbotron{
 	background-image: url('../img/ICC-releases.png');
@@ -40,7 +41,6 @@ html,body {
 .col-sm-3{
 	padding:0px;
 	@include maxwidth;
-	/* max-width:100%; */	
 }
 .col-sm-9{
 	padding:0px;
@@ -99,25 +99,24 @@ section {
 }
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: $footer-color;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e ;
-}
-#footer h5{
+    background: $footer-color ;
+    h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color:$footer-white;
 }
-#footer a {
-    color: #ffffff;
+a {
+    color: $footer-white;
     text-decoration: none ;
     background-color: transparent;
-    /* -webkit-text-decoration-skip: objects */;
+}
 }
 #footer ul.social li{
 	padding: 3px 0;
@@ -125,9 +124,9 @@ section .section-title {
 #footer ul.social li a i {
     margin-right: 5px;
 	font-size:25px;
-	-webkit-transition: .5s /* all ease */;
-	-moz-transition: .5s /* all ease */;
-	transition: .5s /* all ease */;
+	-webkit-transition: .5s ;
+	-moz-transition: .5s ;
+	transition: .5s ;
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
@@ -135,16 +134,16 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color:$footer-white;
 }
 #footer ul.social li a:hover{
 	color:#eeeeee;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+	-webkit-transition: .5s ;
+	-moz-transition: .5s ;
+	transition: .5s ;
 }
 #footer ul.quick-links li:hover{
 	padding: 3px 0;
